@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!--viewport sirve para configurar propiedades relacionadas con la vista de contenido-->
+    <!--width establece el ancho del dispositivo utilizado-->
+    <!--la escala inicial asegura la escala del dispositivo al 100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="encriptador1.css">
+    <title>Encriptadora Alura Challenge</title>
+</head>
+
+<body>
+    <img src="imagenes-encriptador1/alura.jpg" width="200" height="100" style="display: block; margin: auto;">
+    <h1></h1>
+    <!--contenedor de texto-->
+    <p class="titulo_texto_encriptar">Ver o añadir el texto que deseas encriptar</p>
+    <div class="contenedor_texto">
+        <!--contenedor de texto con marcador de posición-->
+        <textarea id="texto_desencriptado" placeholder="Escribe aqui el texto que deseas encriptar"></textarea>
+    </div>
+    <!--añade botones al texto que se va encriptar-->
+    <div class="botones">        
+            <button onclick="encriptar()">Encriptar</button>
+            <button onclick="desencriptar()">Desencriptar</button>
+            <button onclick="copiar()">Copiar</button>
+        </div>
+        <p class="titulo_texto_desencriptar">Ver o añadir el texto que deseas desencriptar</p>
+        <h2 id="aviso"></h2>
+        <div class="contenedor_texto_encriptado">
+            <!--contenedor de texto con marcador de posición-->
+            <textarea id="texto_encriptado" placeholder="Texto encriptado"></textarea>
+        </div>
+    </div>
+    <script src="encriptador1.js"></script>
+</body>
+</html>
